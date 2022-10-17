@@ -26,7 +26,7 @@ function update(inventory) {
     else {
         inventory.forEach(function (product) {
             if(product[0] === prodNumber){
-                F= true;
+                f= true;
                 product[2]= quantity;
                 window.console.log("Product "+ product[0]+ " was updated to new quantity : "+ product[2]);
             }
