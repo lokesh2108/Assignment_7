@@ -124,6 +124,9 @@ movies = movies.concat(leastFavMovies);
 movies.sort();
 window.console.log(movies.reverse());
 
+
+
+
 //STEP 10
 
 var movies = [];
@@ -142,5 +145,3 @@ leastFavMovies[2]= "James Bond 007";
 movies = movies.concat(leastFavMovies);
 movies.sort().reverse();
 window.console.log(movies.slice(-1));
-
-//window.document.write(i+1 + ":" + movies[i]+ "<br>");
