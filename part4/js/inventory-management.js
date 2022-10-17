@@ -17,7 +17,7 @@ function display(inventory) {
 }
 
 function update(inventory) {
-    var Found = false;
+    var f = false;
     var prodNumber = parseInt(window.prompt("Enter the SKU number to be updated"),10);
     var quantity = parseInt(window.prompt("Enter the new quantity to be changed"),10);
     if(isNaN(prodNumber) || isNaN(quantity)) {
@@ -26,12 +26,12 @@ function update(inventory) {
     else {
         inventory.forEach(function (product) {
             if(product[0] === prodNumber){
-                Found= true;
+                F= true;
                 product[2]= quantity;
                 window.console.log("Product "+ product[0]+ " was updated to new quantity : "+ product[2]);
             }
         })
-        if(!Found){
+        if(!f){
             window.console.log("Given product does not exist in the Inventory!");
         }
     }
